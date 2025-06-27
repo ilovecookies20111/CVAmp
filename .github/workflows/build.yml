@@ -1,12 +1,12 @@
-yaml
-
 name: Build and Test
 
 on:
   push:
     tags:
       - 'v*'
-  workflow_dispatch: {}env:
+  workflow_dispatch: {}
+
+env:
   PLAYWRIGHT_BROWSERS_PATH: 0
 
 jobs:
